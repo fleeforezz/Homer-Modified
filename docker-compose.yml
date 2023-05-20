@@ -5,7 +5,7 @@ services:
       image: b4bz/homer:22.02.1 # Have to use this version in order to work fine
       container_name: homer
       volumes:
-        - /home/nhat/Homer/data:/www/assets
+        - /home/nhat/Homer-Modified/data:/www/assets
       ports:
         - 8092:8080
       #environment:
