@@ -1,0 +1,65 @@
+---
+title: "Homer Theme"
+subtitle: "Walkx"
+logo: "logo.png"
+
+header: false
+footer: '<p>Theme made with <span class="has-text-danger">❤️</span> by <a href="https://github.com/WalkxCode">Walkx</a></p>' # Set false if you want to hide it.
+
+stylesheet:
+  - "assets/custom.css"
+
+columns: "3" # You can change this to any number that is a factor of 12: (1, 2, 3, 4, 6, 12)
+theme: default
+colors:
+  light:
+    highlight-primary: "#fff5f2"
+    highlight-secondary: "#fff5f2"
+    highlight-hover: "#bebebe"
+    background: "#12152B"
+    card-background: "rgba(255, 245, 242, 0.8)"
+    text: "#ffffff"
+    text-header: "#fafafa"
+    text-title: "#000000"
+    text-subtitle: "#111111"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#3273dc"
+    link-hover: "#2e4053"
+    background-image: "../assets/wallpaper-light.jpeg" # Change wallpaper.jpeg to the name of your own custom wallpaper!
+  dark:
+    highlight-primary: "#181C3A"
+    highlight-secondary: "#181C3A"
+    highlight-hover: "#1F2347"
+    background: "#12152B"
+    card-background: "rgba(24, 28, 58, 0.8)"
+    text: "#eaeaea"
+    text-header: "#7C71DD"
+    text-title: "#fafafa"
+    text-subtitle: "#8B8D9C"
+    card-shadow: rgba(0, 0, 0, 0.5)
+    link: "#c1c1c1"
+    link-hover: "#fafafa"
+    background-image: "../assets/wallpaper.jpeg"
+
+services:
+  - name: "//GitHub"
+    icon: "fas fa-github"
+    items:
+      - name: "Homer Theme"
+        logo: "assets/tools/walkx.png" # Change github.png to the name of your own custom icon!
+        subtitle: "The official Homer Theme github!"
+        tag: "github"
+        tagstyle: "is-primary" # This will display the is-primary color! Try changing it to; is-link, is-info, is-success, is-warning or is-danger!
+        url: "https://github.com/WalkxCode/Homer-Theme"
+        target: "_blank"
+
+  - name: "//Reddit"
+    icon: "fas fa-reddit"
+    items:
+      - name: "The original reddit post!"
+        logo: "assets/tools/reddit.png"
+        subtitle: "Yes... this is Homer."
+        tag: "reddit"
+        tagstyle: "is-info"
+        url: "https://www.reddit.com/r/selfhosted/comments/q9e82c/yes_this_is_homer_yes_i_spent_2_hours_customizing/"
+        target: "_blank"
