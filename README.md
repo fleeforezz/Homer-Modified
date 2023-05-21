@@ -18,7 +18,7 @@ Required :
 + [Portainer]()
 + [Git Command]()
 # 🔰 Install
-## Using git clone <sup>*[Git]*</sup>
+## Using docker-compose and git clone <sup>*[docker + git]*</sup>
 **Required** :
 + [Git Command]()
 + [Docker]()
@@ -90,3 +90,27 @@ After you finished installing Portainer head to [ http://yourip:9000 ]
 If everything setup correctly **Deploy the stack** 😊
 <br>
 Enter this link 🔗 to jump over your Homer Dashboard [ http://yourip:8092 ]
+
+# 🗑️ Uninstall Homer
+## Using docker-compose and git clone <sup>*[docker + git]*</sup>
+> Remove running docker
+```
+docker ps
+```
+```
+docker stop [image-Name]
+```
+> Remove docker images
+```
+docker images
+```
+```
+docker rmi -f [image-ID]
+```
+> Finally, remove the git repo you have install earlier
+```
+rm -r /path/Homer-Modified
+```
+
+## Using Portainer <sup>[Docker]</sup>
+Simply you just have to remove the stack and image in Portainer
