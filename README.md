@@ -58,7 +58,7 @@ services:
 + [Docker Compose]()
 + [Portainer]()
 > Install Portainer
-```yml
+```dockerfile
     docker run -d \
               --name="portainer" \
               --restart on-failure \
