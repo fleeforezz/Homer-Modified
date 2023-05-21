@@ -3,11 +3,14 @@
     <br>
     Homer
 </h1>
-
-A simple and beautiful design🔆 for home dashboard. For more information visit: [Homer Github](https://github.com/bastienwirtz/homer). 
+<h3 align="center">
+    A simple and beautiful design 🔆 for home dashboard
+    <br>
+    <a>Visit Homer in github</a>
+</h3> 
 <br>
 
-![Preview image for the project](/../main/preview.png)
+![Preview image for the project](preview.png)
 # 🐣 Getting ready
 Required :
 + [Docker]() 
@@ -28,12 +31,10 @@ git clone https://github.com/fleeforezz/Homer-Modified.git
 ```
 cd Homer-Modified
 ```
-> Run docker-compose.yml file
-```
-docker-compose up -d
-```
-## Inside the **docker-compose.yml** file
+> Take a look inside the docker-compose.yml file
 <br>
+
+You can edit host path or ports in docker ✏️
 
 ```yml
 ---
@@ -51,8 +52,13 @@ services:
       #  - GID=1000
       restart: unless-stopped
 ```
+> Run docker-compose.yml file
+```
+docker-compose up -d
+```
 
-## Using Portainer
+
+## Using Portainer <sup>*[Docker]*</sup>
 **Required** :
 + [Docker]()
 + [Docker Compose]()
@@ -70,7 +76,7 @@ services:
 ```
 <br>
 
-After installing finished head to [http://yourip:9000](http://yourip:9000)
+After you finished installing Portainer head to [ http://yourip:9000 ]
 <br>
 
 1. Choose your **environment** ( usually local )
@@ -81,4 +87,6 @@ After installing finished head to [http://yourip:9000](http://yourip:9000)
     - Repository reference : refs/heads/branch_name ( usually main )
 <br>
 
-If everything setup correctly **Deploy the stack**
+If everything setup correctly **Deploy the stack** 😊
+<br>
+Enter this link 🔗 to jump over your Homer Dashboard [ http://yourip:8092 ]
