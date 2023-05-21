@@ -1,0 +1,214 @@
+---
+# Homepage configuration
+# See https://fontawesome.com/icons for icons options
+
+title: "Milky Way"
+subtitle: "Fleeforezz"
+logo: "https://cdn-icons-png.flaticon.com/512/1808/1808512.png"
+# icon: "fas fa-skull-crossbones" # Optional icon
+
+header: true
+footer: #"<style>::-webkit-scrollbar {width: 5px;} ::-webkit-scrollbar-track {border-radius: 5px; background: rgb(35, 35, 35);} ::-webkit-scrollbar-thumb {border-radius: 5px;background-color: rgb(76, 76, 76);}</style>"
+
+stylesheet:
+  - "assets/custom.css"
+  
+# Optional theme customization
+columns: "4" # You can change this to any number that is a factor of 12: (1, 2, 3, 4, 6, 12)
+theme: default
+colors:
+  light:
+    highlight-primary: "#3367d6"
+    highlight-secondary: "#4285f4"
+    highlight-hover: "#5a95f5"
+    background: "#f5f5f5"
+    card-background: "#ffffff"
+    text: "#363636"
+    text-header: "#ffffff"
+    text-title: "#303030"
+    text-subtitle: "#424242"
+    card-shadow: rgba(0, 0, 0, 0.1)
+    link: "#3273dc"
+    link-hover: "#363636"
+  dark:
+    highlight-primary: "#1C2430"
+    highlight-secondary: "#1C2430"
+    highlight-hover: "#47546B"
+    background: "#1C2430"
+    card-background: "#0D1117"
+    text: "#eaeaea"
+    text-header: "#ffffff"
+    text-title: "#fafafa"
+    text-subtitle: "#ffffff"
+    card-shadow: "#000000"
+    link: "#3273dc"
+    link-hover: "#ffdd57"
+
+# Optional navbar
+# links: [] # Allows for navbar (dark mode, layout, and search) without any links
+links:
+  - name: "💡"
+    icon: ""
+    url: "http://192.168.1.31:8081"
+    target: "_blank" # optional html a tag target attribute
+# Services
+# First level array represent a group.
+# Leave only a "items" key if not using group (group name, icon & tagstyle are optional, section separation will not be displayed).
+services:
+  - name: "//Nodes"
+    icon: "fas fa-github"
+    items:
+      - name: "Proxmox"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/proxmox.png" # Change github.png to the name of your own custom icon!
+        tag: "HP I3-3220 Server"
+        tagstyle: "is-primary" # This will display the is-primary color! Try changing it to; is-link, is-info, is-success, is-warning or is-danger!
+        url: "https://192.168.1.33:8006/"
+        target: "_blank"
+      - name: "Proxmox [ Backup-Server ]"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/proxmox.png" # Change github.png to the name of your own custom icon!
+        tag: "DELL E Server"
+        tagstyle: "is-primary" # This will display the is-primary color! Try changing it to; is-link, is-info, is-success, is-warning or is-danger!
+        url: "https://192.168.1.34:8007/"
+        target: "_blank"
+      - name: "Webmin [ Notron ]"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/webmin.png" # Change github.png to the name of your own custom icon!
+        tag: "HP Laptop"
+        tagstyle: "is-primary" # This will display the is-primary color! Try changing it to; is-link, is-info, is-success, is-warning or is-danger!
+        url: "https://192.168.1.33:8006/"
+        target: "_blank"
+
+  - name: "//NetWork"
+    icon: "fas fa-reddit"
+    items:
+      - name: "Pi-hole 0"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/pi-hole.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.120/admin/login.php"
+        target: "_blank"
+      - name: "Pi-hole 1"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/pi-hole.png"
+        tag: "HP Laptop"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.30/admin/login.php"
+        target: "_blank"
+
+  - name: "//Docker & Kubernetes Containers"
+    icon: "fas fa-reddit"
+    items:
+      - name: "Rancher"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/rancher.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "https://192.168.1.25/"
+        target: "_blank"
+      - name: "Webpage Manager"
+        logo: "https://cdn-icons-png.flaticon.com/512/4069/4069222.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.47:3000/"
+        target: "_blank"
+
+  - name: "//Monitoring"
+    icon: "fas fa-reddit"
+    items:
+      - name: "Uptime Kuma [ Nodes ]"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/uptime-kuma.png"
+        tag: "HP Laptop"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.29:3001/"
+        target: "_blank"
+      - name: "Uptime Kuma [ VMs ]"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/uptime-kuma.png"
+        tag: "HP Laptop"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.60:3001/"
+        target: "_blank"
+
+  - name: "//Media"
+    icon: "fas fa-reddit"
+    items:
+      - name: "Jellyfin"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/jellyfin.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.32:8096/"
+        target: "_blank"
+      - name: "Navidrome"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/navidrome.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.32:4533/"
+        target: "_blank"
+
+  - name: "//Downloader"
+    icon: "fas fa-reddit"
+    items:
+      - name: "YoutubeDL-Material"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/youtubedl.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.32:8998/"
+        target: "_blank"
+
+  - name: "//Cloud Storage"
+    icon: "fas fa-reddit"
+    items:
+      - name: "TrueNas Scale"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/truenas-scale.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.32"
+        target: "_blank"
+      - name: "NextCloud"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/nextcloud.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.32"
+        target: "_blank"
+
+  - name: "//Vault"
+    icon: "fas fa-reddit"
+    items:
+      - name: "Bitwarden"
+        logo: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons@master/png/bitwarden.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "https://192.168.1.13/"
+        target: "_blank"
+
+  - name: "//Home Project"
+    icon: "fas fa-reddit"
+    items:
+      - name: "Fleeforezz"
+        logo: "https://cdn-icons-png.flaticon.com/256/1409/1409016.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.57/Home.html"
+        target: "_blank"
+      - name: "Sakura"
+        logo: "https://cdn-icons-png.flaticon.com/512/1762/1762755.png"
+        tag: "VM"
+        tagstyle: "is-primary"
+        url: "http://192.168.1.56/"
+        target: "_blank"
+        
+  - name: "//Icon Pack"
+    icon: "fas fa-reddit"
+    items:
+      - name: "walkxcode"
+        logo: "https://camo.githubusercontent.com/a56a63dd9bc5d295092cb3c853296a96e95031660de216c4961af62eb80802ac/68747470733a2f2f7777772e6a7364656c6976722e636f6d2f69636f6e5f323536783235362e706e67"
+        tag: "Icon Pack"
+        tagstyle: "is-primary"
+        url: "https://cdn.jsdelivr.net/gh/walkxcode/dashboard-icons/png/"
+        target: "_blank"
+
+  - name: "//Weather APi"
+    icon: "fas fa-reddit"
+    items: 
+      - name: "Weater APi"
+        logo: "https://cdn.weatherapi.com/v4/images/weatherapi_logo.png"
+        tag: "API"
+        tagstyle: "is-primary"
+        url: "https://www.weatherapi.com/"
+        target: "_blank"
